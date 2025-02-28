@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Populares</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Filmes Populares</h1>
+        <i class="fas fa-list" id="open-list"></i>
+        <div class="search-box">
+            <input type="text" placeholder="Digite algum filme para pesquisar...">
+            <i class="fas fa-search"></i>
+        </div>
+        <label class="toggle-favorite">
+            <input type="checkbox">
+            <span>Mostrar meus filmes favoritos apenas</span>
+        </label>
+        <div class="movies-list">
+            <div class="movie">
+                <img src="./img/filme1.png" alt="Avengers Endgame">
+                <div class="movie-info">
+                    <h2>Vingadores Ultimato (2019)</h2>
+                    <p>⭐ 8.9 <i class="fas fa-heart"></i> Favoritar</p><button class="add-to-list">Adicionar á lista</button>
+                    <p>"Vingadores: Ultimato" é um encerramento épico para a Saga do Infinito, mas tem suas falhas. A viagem no tempo, apesar de divertida,
+                        apresenta inconsistências, e algumas escolhas de desenvolvimento, como o tom cômico de Thor e a nova versão do Hulk, dividiram opiniões.
+                        No entanto, o filme compensa com momentos emocionantes, uma batalha final memorável e um desfecho satisfatório para personagens como Tony Stark e Capitão América.</p>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="./img/filme2.png" alt="Batman">
+                <div class="movie-info">
+                    <h2>Batman (2022)</h2>
+                    <p>⭐ 9.4 <i class="fas fa-heart"></i> Favoritar</p><button class="add-to-list">Adicionar á lista</button>
+                    <p>"The Batman" (2022) entrega uma versão mais sombria e investigativa do herói, focando no lado detetive de Bruce Wayne. A atmosfera noir e a trilha sonora intensa criam uma imersão única,
+                        enquanto Robert Pattinson entrega uma performance introspectiva e melancólica. No entanto, o ritmo lento e a longa duração podem tornar a experiência cansativa para alguns espectadores.
+                        Mesmo assim, é uma abordagem refrescante e bem-executada do Cavaleiro das Trevas.</p>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="./img/filme3.png" alt="Doctor Strange">
+                <div class="movie-info">
+                    <h2>Doutor Estranho no Multiverso da Loucura</h2>
+                    <p>⭐ 8.5 <i class="fas fa-heart"></i> Favoritar</p><button class="add-to-list">Adicionar á lista</button>
+                    <p>"Doutor Estranho no Multiverso da Loucura" aposta em um tom mais sombrio e no estilo marcante de Sam Raimi, trazendo sequências visuais criativas e elementos de terror.
+                        A atuação de Elizabeth Olsen como Feiticeira Escarlate se destaca, mas o roteiro apressado e algumas decisões de enredo, como o tratamento dos Illuminati, podem decepcionar.
+                         Apesar disso, o filme entrega cenas impactantes e expande o conceito do multiverso no MCU.</p>
+                </div>
+            </div>
+            <div class="movie">
+                <img src="./img/filme4.png" alt="Avatar">
+                <div class="movie-info">
+                    <h2>Avatar (2009)</h2>
+                    <p>⭐ 9.5 <i class="fas fa-heart favorite-btn"></i> Favoritar</p><button class="add-to-list">Adicionar á lista</button>
+                    <p>"Avatar" (2009) impressiona com seus efeitos visuais revolucionários e a imersão no mundo de Pandora, estabelecendo um novo padrão para o cinema em 3D. No entanto, sua história,
+                        apesar de envolvente, segue uma fórmula previsível, lembrando narrativas como Pocahontas e Dança com Lobos. Ainda assim, a grandiosidade visual e a trilha sonora marcante tornam
+                        o filme uma experiência cinematográfica inesquecível.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="movie-list-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Filmes para Assistir</h2>
+            <ul id="watchlist">
+                <!-- Filmes adicionados à lista serão exibidos aqui -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
