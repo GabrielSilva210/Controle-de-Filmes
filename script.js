@@ -8,13 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-btn');
     const watchlist = document.getElementById('watchlist');
 
-    // Função para filtrar os filmes pelo nome
     searchInput.addEventListener('input', () => {
         const searchQuery = searchInput.value.toLowerCase();
         filterMovies(searchQuery);
     });
 
-    // Função para alternar o status de favorito
     movieList.addEventListener('click', (e) => {
         if (e.target && e.target.matches('.fa-heart')) {
             const movie = e.target.closest('.movie');
@@ -27,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filterMovies(searchInput.value.toLowerCase());
     });
 
-    // Função que filtra os filmes com base na pesquisa e nos favoritos
     function filterMovies(query) {
         const showFavoritesOnly = favoriteToggle.checked;
         
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const title = movie.querySelector('h2').textContent.toLowerCase();
             const isFavorite = movie.classList.contains('favorite');
             
-            // Verifica se o título do filme inclui a pesquisa e se o filtro de favoritos está ativado
             const matchesSearch = title.includes(query);
             const matchesFavorites = !showFavoritesOnly || isFavorite;
 
@@ -65,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         removeBtn.classList.add('remove-btn');
         removeBtn.addEventListener('click', (e) => {
             watchlist.removeChild(movieItem);
-            e.stopPropagation(); // Evita que o clique no botão feche a modal
+            e.stopPropagation(); 
         });
 
         movieItem.appendChild(removeBtn);

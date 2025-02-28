@@ -106,28 +106,27 @@ h1 {
 }
 
 .movie-info i {
-    color: white;  /* Cor inicial (não favorito) */
+    color: white;  
     cursor: pointer;
 }
 
-/* Quando o filme é favorito, o coração ficará vermelho */
+
 .movie.favorite .movie-info i {
-    color: red;  /* Cor para quando for favorito */
+    color: red;  
 }
 
-/* Estilos para o ícone da lista */
 #open-list {
     font-size: 30px;
     cursor: pointer;
     color: white;
-    position: absolute; /* Agora é absoluto em relação ao contêiner */
-    top: 10px;  /* Distância do topo */
-    right: 10px; /* Distância da borda direita */
+    position: absolute; 
+    top: 10px;  
+    right: 10px; 
 }
 
 /* Estilos da modal */
 .modal {
-    display: none; /* Modal oculta por padrão */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -176,30 +175,30 @@ h1 {
     font-weight: bold;
 }
 
-/* Adicionar transições suaves ao abrir e fechar a modal */
+
 .modal-content {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .add-to-list {
-    background-color: #ff7f7f; /* Vermelho suave */
-    color: #fff; /* Cor do texto */
-    font-size: 12px; /* Tamanho da fonte menor */
-    padding: 8px 16px; /* Menos espaçamento */
-    border-radius: 20px; /* Bordas arredondadas */
+    background-color: #ff7f7f;
+    color: #fff; 
+    font-size: 12px; 
+    padding: 8px 16px; 
+    border-radius: 20px; 
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombrinha suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .add-to-list:hover {
-    background-color: #ff5f5f; /* Cor mais escura no hover */
+    background-color: #ff5f5f; 
 }
 
 
 .add-to-list:active {
-    background-color: #e03e3e; /* Cor quando pressionado */
-    transform: translateY(2px); /* Movimento de pressionamento */
-}
+    background-color: #e03e3e; 
+    transform: translateY(2px); 
 
+}
